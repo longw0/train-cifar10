@@ -212,12 +212,17 @@ model.fc = nn.Sequential(nn.Dropout(p=0.5), nn.Linear(in_features, num_classes))
 ### 训练曲线
 
 ![](/result/curve.png)
+=======
+>>>>>>> d66235f64ed3ea3d7403c4c7f19947ae360b2f17
 
 左图为准确率曲线，右图为损失曲线。可以看到模型在约 120 个 epoch 后趋于收敛，验证集准确率稳定在 95% 以上。
 
 ### 模型计算图
 
+
 ![](/result/model_structure.png)
+=======
+>>>>>>> d66235f64ed3ea3d7403c4c7f19947ae360b2f17
 
 > 上图为通过 `torchviz` 生成的 ResNet-18（适配 CIFAR-10 版本）计算图，可见主干卷积残差结构与最后的全局平均池化、全连接分类头。
 
